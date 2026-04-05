@@ -9,16 +9,16 @@ class Uxvalidator < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/janusfidel/deltix-cli/releases/download/v0.1.0/uxvalidator_darwin_amd64.tar.gz"
-      sha256 "6fd2ca62f13eaf1a3c649bab20a110f6c0fef09779604f1cbdbfca42d72f3791"
+      url "https://github.com/whitingdeltix/deltix-cli/releases/download/v0.1.0/uxvalidator_darwin_amd64.tar.gz"
+      sha256 "fe4c246f044c25ec3814be1766d47a587eb83f05ec2969c9cbee59506f0ce91e"
 
       define_method(:install) do
         bin.install "uxvalidator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/janusfidel/deltix-cli/releases/download/v0.1.0/uxvalidator_darwin_arm64.tar.gz"
-      sha256 "8e63856ef9812d310af143450e45b8d4fccdccf76be6c6ef0b1adda7e5116473"
+      url "https://github.com/whitingdeltix/deltix-cli/releases/download/v0.1.0/uxvalidator_darwin_arm64.tar.gz"
+      sha256 "28255d1abbb8e420a47e85ea378cc451f899f4cc291af5a702b9d23cc3627c08"
 
       define_method(:install) do
         bin.install "uxvalidator"
@@ -28,15 +28,15 @@ class Uxvalidator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janusfidel/deltix-cli/releases/download/v0.1.0/uxvalidator_linux_amd64.tar.gz"
-      sha256 "fd494a376e3a29d7bd58bf9299a12e2caebe28d212266a7be44ad878e1649cb1"
+      url "https://github.com/whitingdeltix/deltix-cli/releases/download/v0.1.0/uxvalidator_linux_amd64.tar.gz"
+      sha256 "fae36ba9b9f1d37addf46c1b131b62dc6857b0478faba052409c41870e13a709"
       define_method(:install) do
         bin.install "uxvalidator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/janusfidel/deltix-cli/releases/download/v0.1.0/uxvalidator_linux_arm64.tar.gz"
-      sha256 "53346c1c09754ca8cf0217dd3fd07c0df84dd242258dfbe5f058d868e485b6fe"
+      url "https://github.com/whitingdeltix/deltix-cli/releases/download/v0.1.0/uxvalidator_linux_arm64.tar.gz"
+      sha256 "1f860daeed48cab225c352e7c072c893be450aa6e486f9a0a1fdf69fea93e5c4"
       define_method(:install) do
         bin.install "uxvalidator"
       end
